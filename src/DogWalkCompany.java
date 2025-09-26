@@ -6,6 +6,8 @@ public class DogWalkCompany {
         schedule = new int[24];
     }
 
+
+
     public String toString() {
         String s = "";
         for (int i = 0; i < schedule.length; i++)
@@ -13,10 +15,20 @@ public class DogWalkCompany {
     return s;
     }
 
+
+
     public int numAvailableDogs(int hour)
     {
         return schedule[hour];
     }
+
+public void updateDogs(int hour, int numberDogsWalked)
+{
+    schedule[hour] -= numberDogsWalked;
+}
+
+
+
 
     public int addDogs()
     {
