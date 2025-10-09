@@ -23,9 +23,9 @@ public class DogWalker {
         }
     public int dogWalkShift(int startHour, int endHour) {
         int pay = 0;
-        int dogs = walkDogs(startHour);
         while(startHour <= endHour)
         {
+            int dogs = walkDogs(startHour);
             pay += dogs * 5;
             startHour++;
             if (dogs == maxDogs || startHour >= 9 && startHour <= 17)
