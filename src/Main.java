@@ -10,12 +10,12 @@ public class Main {
     public static int reader() throws FileNotFoundException {
         int money = 0;
 
-        DogWalkCompany[] companies = new DogWalkCompany[1000];
-        File f = new File("Companies.txt");
+        DogWalkCompany[] companies = new DogWalkCompany[10000];
+        File f = new File("Company.txt");
         Scanner s = new Scanner(f);
 
         int index = 0;
-        while (s.hasNextInt() && index < 1000) {
+        while (s.hasNextInt() && index < 10000) {
             int[] dogs = new int[24];
             for (int i = 0; i < 24; i++) {
                 dogs[i] = s.nextInt();
@@ -25,7 +25,7 @@ public class Main {
         s.close();
 
         DogWalker[] walkers = new DogWalker[10000];
-        f = new File("Walkers.txt");
+        f = new File("Walker.txt");
         s = new Scanner(f);
 
         index = 0;

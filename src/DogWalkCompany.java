@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class DogWalkCompany {
     private int[] schedule;
 
-    public DogWalkCompany() {
+    public DogWalkCompany(int[] dogs) {
         schedule = new int[24];
     }
 
